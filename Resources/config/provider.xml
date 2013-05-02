@@ -7,6 +7,7 @@
         <parameter key="oryzone_media_storage.provider.container_provider_factory.class">Oryzone\Bundle\MediaStorageBundle\Provider\ContainerProviderFactory</parameter>
 
         <parameter key="oryzone_media_storage.provider.file.class">Oryzone\MediaStorage\Provider\FileProvider</parameter>
+        <parameter key="oryzone_media_storage.provider.link.class">Oryzone\MediaStorage\Provider\LinkProvider</parameter>
         <parameter key="oryzone_media_storage.provider.image.class">Oryzone\MediaStorage\Provider\ImageProvider</parameter>
         <parameter key="oryzone_media_storage.provider.youtube.class">Oryzone\MediaStorage\Provider\YoutubeProvider</parameter>
         <parameter key="oryzone_media_storage.provider.vimeo.class">Oryzone\MediaStorage\Provider\VimeoProvider</parameter>
@@ -28,6 +29,11 @@
         <!-- oryzone_media_storage.provider.file -->
         <service id="oryzone_media_storage.provider.file" class="%oryzone_media_storage.provider.file.class%">
             <tag name="oryzone_media_storage_provider" alias="file"/>
+        </service>
+
+        <!-- oryzone_media_storage.provider.link -->
+        <service id="oryzone_media_storage.provider.link" class="%oryzone_media_storage.provider.link.class%">
+            <tag name="oryzone_media_storage_provider" alias="link"/>
         </service>
 
         <!-- oryzone_media_storage.provider.image -->
