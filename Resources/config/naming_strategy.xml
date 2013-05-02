@@ -7,6 +7,8 @@
         <parameter key="oryzone_media_storage.naming_strategy.naming_strategy_factory.class">Oryzone\Bundle\MediaStorageBundle\NamingStrategy\ContainerNamingStrategyFactory</parameter>
 
         <parameter key="oryzone_media_storage.naming_strategy.slugged.class">Oryzone\MediaStorage\NamingStrategy\SluggedNamingStrategy</parameter>
+
+        <parameter key="oryzone_media_storage.naming_strategy.folder.class">Oryzone\MediaStorage\NamingStrategy\FolderNamingStrategy</parameter>
     </parameters>
 
     <services>
@@ -22,6 +24,11 @@
         <!-- oryzone_media_storage.naming_strategy.slugged -->
         <service id="oryzone_media_storage.naming_strategy.slugged" class="%oryzone_media_storage.naming_strategy.slugged.class%">
             <tag name="oryzone_media_storage_naming_strategy" alias="slugged"/>
+        </service>
+
+        <!-- oryzone_media_storage.naming_strategy.folder -->
+        <service id="oryzone_media_storage.naming_strategy.folder" class="%oryzone_media_storage.naming_strategy.folder.class%">
+            <tag name="oryzone_media_storage_naming_strategy" alias="folder"/>
         </service>
     </services>
 
