@@ -23,7 +23,7 @@
         "php": ">=5.3.3",
         "oryzone/media-storage": "2.0.*@dev",
         "symfony/framework-bundle": ">=2.1,<2.3-dev",
-        "knplabs/knp-gaufrette-bundle": "0.2.*@dev"
+        "knplabs/knp-gaufrette-bundle": "dev-master#171844b400e50d66f6fab6aa7aea820407fc74a3"
     },
     "suggest": {
         "avalanche123/imagine-bundle": "*",
